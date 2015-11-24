@@ -3,5 +3,13 @@ name = "janjanjan"
 version = "0.1.0"
 authors = ["flada-auxv <aseknock@gmail.com>"]
 
+[lib]
+name = "mahjong"
+path = "src/mahjong/mod.rs"
+
+[[bin]]
+name = "janjanjan"
+path = "src/main.rs"
+
 [dependencies]
 rand = "*"
