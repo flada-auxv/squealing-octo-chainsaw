@@ -12,12 +12,8 @@ pub struct Table {
 }
 impl Table {
     pub fn new() -> Table {
-        let mut player1 = Player::new();
-        let mut player2 = Player::new();
-        let mut player3 = Player::new();
-        let mut player4 = Player::new();
         Table {
-            players: vec![player1, player2, player3, player4],
+            players: vec![Player::new(), Player::new(), Player::new(), Player::new()],
             tiles: Tile::shuffled_all_tiles(),
         }
     }
