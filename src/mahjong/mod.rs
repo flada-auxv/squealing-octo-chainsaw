@@ -1,7 +1,5 @@
 extern crate rand;
 
-use std::slice::Iter;
-
 mod tile;
 use tile::Tile;
 
