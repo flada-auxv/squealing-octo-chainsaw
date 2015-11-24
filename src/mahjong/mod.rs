@@ -23,7 +23,7 @@ impl Table {
     }
     fn draw(&mut self, num: usize) -> Vec<Tile> {
         let mut ret = vec![];
-        for i in 0..num {
+        for _ in 0..num {
             ret.push(self.tiles.remove(0))
         }
         ret
