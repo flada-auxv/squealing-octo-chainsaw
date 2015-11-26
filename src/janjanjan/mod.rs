@@ -40,7 +40,6 @@ impl fmt::Debug for Table {
     }
 }
 
-#[derive(Debug,Clone)]
 pub struct Player {
     name: String,
     tehai: Option<Vec<Tile>>,
@@ -51,5 +50,10 @@ impl Player {
             name: "player".to_string(),
             tehai: None,
         }
+    }
+}
+impl fmt::Debug for Player {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "name: \"{}\", tehai: {:?}", self.name, self.tehai.clone().unwrap_or(vec!()))
     }
 }
