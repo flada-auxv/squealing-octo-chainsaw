@@ -1,9 +1,10 @@
 extern crate rand;
 
+use std::fmt;
+
 mod tile;
 use tile::Tile;
 
-#[derive(Debug)]
 pub struct Table {
     players: Vec<Player>,
     tiles: Vec<Tile>,
@@ -26,6 +27,16 @@ impl Table {
         for i in 0..4 {
             self.players[i].tehai = Some(self.draw(13))
         }
+    }
+}
+impl fmt::Debug for Table {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f,
+               "player1 => {:?}\nplayer2 => {:?}\nplayer3 => {:?}\nplayer4 => {:?}",
+               self.players[0],
+               self.players[1],
+               self.players[2],
+               self.players[3])
     }
 }
 
