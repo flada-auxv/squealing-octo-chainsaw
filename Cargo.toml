@@ -4,8 +4,8 @@ version = "0.1.0"
 authors = ["flada-auxv <aseknock@gmail.com>"]
 
 [lib]
-name = "mahjong"
-path = "src/mahjong/mod.rs"
+name = "janjanjan"
+path = "src/janjanjan/mod.rs"
 
 [[bin]]
 name = "janjanjan"

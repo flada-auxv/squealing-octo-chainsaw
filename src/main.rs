@@ -1,6 +1,6 @@
-extern crate mahjong;
+extern crate janjanjan;
 
-use mahjong::Table;
+use janjanjan::Table;
 
 fn main() {
     let mut table = Table::new();
